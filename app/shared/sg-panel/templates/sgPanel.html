@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4 style="display:inline-block">{{component.title}}</h4>
+                    </div>
+                    <div class="col-md-2 text-right">
+                        <i class="fa fa-code" ng-click="collapse()" style="display:inline-block;font-size:25px;margin:6px 0"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="code-preview-container" ng-hide="collapsed">
+                    <sg-nav-pills></sg-nav-pills>
+                    <div class="tab-content">
+                        <div ng-class="{'in active':isSet(1)}" class="tab-pane fade">
+                            <pre class="" style="padding:15px"><code class="" ng-bind="component.code.html"></code></pre>
+                        </div>
+                        <div ng-class="{'in active':isSet(2)}" class="tab-pane fade">
+                            <pre><code>derrr</code></pre>
+                        </div>
+                        <div ng-class="{'in active':isSet(3)}" class="tab-pane fade">
+                            <pre><code>stuff</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-view" ng-bind-html="toTrusted(component.code.html)"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

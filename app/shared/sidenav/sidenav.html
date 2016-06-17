@@ -1,0 +1,144 @@
+<style>
+	.sidenav-container {
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 275px;
+		border: 1px solid #ccc;
+		border-top:none
+	}
+	.profile-usermenu {
+		border-right: 1px solid #ccc;
+		height: 100vh;
+	}
+	.panel.list-group {
+		border: none;
+	}
+	.panel.list-group .list-group-item {
+		border-left: none;
+		border-right: none;
+		border-radius: 0;
+	}
+</style>
+<div class="sidenav-container">
+	<div class="profile-usermenu">
+	    <div class="panel list-group">
+	        <a class="list-group-item" style="border-top:0;">
+		        <span>Dashboard</span>
+		        <i class="fa fa-dashboard pull-left list-icon"></i>
+	        </a>
+			<!-- UI FEATURES -->	        
+	        <a class="list-group-item main" data-parent="#menu" data-target="#ui-features" data-toggle="collapse" href="">
+		        <span>UI Features</span>
+		        <i class="fa fa-database pull-left list-icon"></i>
+		        <i class="fa fa-angle-down pull-right panel-icon"></i>
+		    </a>
+		    
+	        <div class="sublinks collapse" id="ui-features">
+	            <a class="list-group-item small" ui-sref="dashboard.general-components">
+		            <span class="sub">General Components</span>
+		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
+					<i class="fa fa-caret-right pull-left"></i>
+	        	</a>
+	            <a class="list-group-item small" ui-sref="dashboard.buttons">
+		            <span class="sub">Buttons</span>
+		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
+					<i class="fa fa-caret-right pull-left"></i>
+	        	</a>
+	            <a class="list-group-item small" ui-sref="dashboard.popover-confirmations">
+		            <span class="sub">Popover Confirmations</span>
+		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
+					<i class="fa fa-caret-right pull-left"></i>
+	        	</a>
+	            <a class="list-group-item small" ui-sref="dashboard.icons">
+		            <span class="sub">Icons</span>
+		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
+					<i class="fa fa-caret-right pull-left"></i>
+	        	</a>
+	            <a class="list-group-item small" ui-sref="dashboard.typography">
+		            <span class="sub">Typography</span>
+		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
+					<i class="fa fa-caret-right pull-left"></i>
+	        	</a>
+	            <a class="list-group-item small" ui-sref="dashboard.tabs-and-navs">
+		            <span class="sub">Tabs & Navs</span>
+		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
+					<i class="fa fa-caret-right pull-left"></i>
+	        	</a>
+	            <a class="list-group-item small" ui-sref="dashboard.accordions">
+		            <span class="sub">Accordions</span>
+		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
+					<i class="fa fa-caret-right pull-left"></i>
+	        	</a>
+	            <a class="list-group-item small" ui-sref="dashboard.timeline">
+		            <span class="sub">Timeline</span>
+		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
+					<i class="fa fa-caret-right pull-left"></i>
+	        	</a>
+	            <a class="list-group-item small" ui-sref="dashboard.tree-view">
+		            <span class="sub">Tree View</span>
+		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
+					<i class="fa fa-caret-right pull-left"></i>
+	        	</a>
+	            <a class="list-group-item small" ui-sref="dashboard.progress-bar">
+		            <span class="sub">Progress Bar</span>
+		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
+					<i class="fa fa-caret-right pull-left"></i>
+	        	</a>
+	            <a class="list-group-item small" ui-sref="dashboard.block-ui">
+		            <span class="sub">Block UI</span>
+		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
+					<i class="fa fa-caret-right pull-left"></i>
+	        	</a>
+	            <a class="list-group-item small" ui-sref="dashboard.growl-notifications">
+		            <span class="sub">Growl Notifications</span>
+		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
+					<i class="fa fa-caret-right pull-left"></i>
+	        	</a>
+	        	
+	    	</div>
+
+
+
+			<!-- COMPONENTS -->
+	        <a class="list-group-item main" data-parent="#menu" data-target="#components" data-toggle="collapse" href="">
+		        <span>Components</span>
+		        <i class="fa fa-database pull-left list-icon"></i>
+		        <i class="fa fa-angle-down pull-right panel-icon"></i>
+		    </a>
+		    
+	        <div class="sublinks collapse" id="components">
+	            <a class="list-group-item small">
+		            <span class="sub">LISTTITLE</span>
+		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
+					<i class="fa fa-caret-right pull-left"></i>
+	        	</a>
+	    	</div>
+
+
+
+			<!-- FORM STUFF -->
+	        <a class="list-group-item main" data-parent="#menu" data-target="#form-stuff" data-toggle="collapse" href="">
+		        <span>Form Elements</span>
+		        <i class="fa fa-database pull-left list-icon"></i>
+		        <i class="fa fa-angle-down pull-right panel-icon"></i>
+		    </a>
+		    
+	        <div class="sublinks collapse" id="form-stuff">
+	            <a class="list-group-item small" ui-sref="dashboard.inputs">
+		            <span class="sub">Inputs</span>
+		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
+					<i class="fa fa-caret-right pull-left"></i>
+	        	</a>
+	    	</div>
+
+			<!-- ADD NEW COMPONENTS/ELEMENTS -->
+			<a class="list-group-item" ui-sref="dashboard.add-new">
+				<span>Add Elements/Components</span>
+				<i class="fa fa-database pull-left list-icon"></i>
+			</a>
+	    </div>
+	</div>
+</div>

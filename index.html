@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--
+Template Name: Styleguide-v2
+Version: 1.0
+Author: Gregory Jacobs, Frank Cooke
+Website: http://www.massagebook.com
+--!>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" ng-app="StyleGuideApp">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+<head>
+    <meta charset="utf-8" />
+    <title>MassageBook Styleguide-v2</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <!--<link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />-->
+    <!--<link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+    <!--<link rel="stylesheet" href="../static/css/select2.css" type="text/css">-->
+    <link href="assets/scss/styleguide-v2.css" type="text/css"/>
+    <!--<link href="../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />-->
+    <!--<link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />-->
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <!--<link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />-->
+    <!--<link href="../assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />-->
+    <!--<link href="../assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />-->
+    <!--<link href="../assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />-->
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <!--<link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />-->
+    <!--<link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />-->
+    <!-- END THEME GLOBAL STYLES -->
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <!--<link href="../assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />-->
+    <!--<link href="../assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />-->
+    <!--<link href="../assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />-->
+    <!-- END THEME LAYOUT STYLES -->
+    <!--<link rel="shortcut icon" href="favicon.ico" /> </head>-->
+<!-- END HEAD -->
+</head>
+<body>
+    <nav-directive></nav-directive>
+    <div ui-view></div>
+
+    <!-- External Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+    <!--<script src="../static/assets/select2-3.4.8/select2.min.js" type="text/javascript"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-animate.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-sanitize.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-resource.min.js" type="text/javascript"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js" type="text/javascript"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js" type="text/javascript"></script>
+
+    <!-- Angular Files -->
+    <script src="app/app.js" type="text/javascript"></script>
+	
+	<!-- Components -->
+    <script src="app/components/dashboard/dashboardModule.js" type="text/javascript"></script>
+    <script src="app/components/dashboard/dashboardController.js" type="text/javascript"></script>
+
+    <script src="app/components/ui-features/general-components/generalComponentsModule.js" type="text/javascript"></script>
+    <script src="app/components/ui-features/general-components/generalComponentsController.js" type="text/javascript"></script>
+    <script src="app/components/ui-features/general-components/generalComponentsService.js" type="text/javascript"></script>
+    <script src="app/components/ui-features/general-components/directives/nav-tabs/gcAdminDirective.js" type="text/javascript"></script>
+    <script src="app/components/ui-features/general-components/directives/nav-tabs/gcPUDirective.js" type="text/javascript"></script>
+
+    <script src="app/components/ui-features/buttons/buttonsModule.js" type="text/javascript"></script>
+    <script src="app/components/ui-features/buttons/buttonsController.js" type="text/javascript"></script>
+
+    <script src="app/components/ui-features/popover-confirmations/popoverConfirmationsModule.js" type="text/javascript"></script>
+    <script src="app/components/ui-features/popover-confirmations/popoverConfirmationsController.js" type="text/javascript"></script>
+
+    <script src="app/components/ui-features/icons/iconsModule.js" type="text/javascript"></script>
+    <script src="app/components/ui-features/icons/iconsController.js" type="text/javascript"></script>
+
+    <script src="app/components/ui-features/typography/typographyModule.js" type="text/javascript"></script>
+    <script src="app/components/ui-features/typography/typographyController.js" type="text/javascript"></script>
+
+    <script src="app/components/ui-features/tabs-and-navs/tabsAndNavsModule.js" type="text/javascript"></script>
+    <script src="app/components/ui-features/tabs-and-navs/tabsAndNavsController.js" type="text/javascript"></script>
+
+    <script src="app/components/ui-features/accordions/accordionsModule.js" type="text/javascript"></script>
+    <script src="app/components/ui-features/accordions/accordionsController.js" type="text/javascript"></script>
+
+    <script src="app/components/ui-features/timeline/timelineModule.js" type="text/javascript"></script>
+    <script src="app/components/ui-features/timeline/timelineController.js" type="text/javascript"></script>
+
+    <script src="app/components/ui-features/tree-view/treeViewModule.js" type="text/javascript"></script>
+    <script src="app/components/ui-features/tree-view/treeViewController.js" type="text/javascript"></script>
+
+    <script src="app/components/ui-features/progress-bar/progressBarModule.js" type="text/javascript"></script>
+    <script src="app/components/ui-features/progress-bar/progressBarController.js" type="text/javascript"></script>
+
+    <script src="app/components/ui-features/block-ui/blockUIModule.js" type="text/javascript"></script>
+    <script src="app/components/ui-features/block-ui/blockUIController.js" type="text/javascript"></script>
+
+    <script src="app/components/ui-features/growl-notifications/growlNotificationsModule.js" type="text/javascript"></script>
+    <script src="app/components/ui-features/growl-notifications/growlNotificationsController.js" type="text/javascript"></script>
+
+    <script src="app/components/forms/inputs/inputsModule.js" type="text/javascript"></script>
+    <script src="app/components/forms/inputs/inputsController.js" type="text/javascript"></script>
+    <script src="app/components/forms/inputs/inputsService.js" type="text/javascript"></script>
+    <script src="app/components/forms/inputs/directives/nav-tabs/inputsAdminDirective.js" type="text/javascript"></script>
+
+    <script src="app/components/add-new/elements-and-components/addNewModule.js" type="text/javascript"></script>
+    <script src="app/components/add-new/elements-and-components/addNewController.js" type="text/javascript"></script>
+    <script src="app/components/add-new/elements-and-components/addNewService.js" type="text/javascript"></script>
+
+	<!-- Shared -->
+    <script src="app/shared/core/coreModule.js" type="text/javascript"></script>
+    <script src="app/shared/core/constants.js" type="text/javascript"></script>
+    <script src="app/shared/core/coreService.js" type="text/javascript"></script>
+
+    <script src="app/shared/nav/navModule.js" type="text/javascript"></script>
+    <script src="app/shared/nav/navDirective.js" type="text/javascript"></script>
+
+    <script src="app/shared/sidenav/sidenavModule.js" type="text/javascript"></script>
+    <script src="app/shared/content/contentModule.js" type="text/javascript"></script>
+
+    <script src="app/shared/sg-panel/sgPanelModule.js" type="text/javascript"></script>
+    <script src="app/shared/sg-panel/directives/sgPanel.js" type="text/javascript"></script>
+    <script src="app/shared/sg-panel/directives/sgNavPills.js" type="text/javascript"></script>
+
+    <script src="app/shared/sg-nav-tabs/sgNavTabsModule.js" type="text/javascript"></script>
+    <script src="app/shared/sg-nav-tabs/directives/sgNavTabs.js" type="text/javascript"></script>
+
+    <script src="app/shared/select2/selectTwoModule.js" type="text/javascript"></script>
+    <script src="app/shared/select2/directives/selectTwo.js" type="text/javascript"></script>
+
+</body>
+</html>

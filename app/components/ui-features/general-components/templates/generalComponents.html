@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="general-components-container">
+                <div class="sg-heading-container">
+                    <h3>General Components</h3>
+                </div>
+                <div class="sg-nav-tabs-container">
+                    <sg-nav-tabs method="updateTabId(val)"></sg-nav-tabs>
+                </div>
+                <div class="sg-content-container">
+                    <div class="tab-content">
+                        <div ng-class="{'active in': tab === 1}" class="tab-pane fade" general-components-admin></div>
+                        <div ng-class="{'active in': tab === 2}" class="tab-pane fade" general-components-pu></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

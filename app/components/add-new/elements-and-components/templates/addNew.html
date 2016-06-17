@@ -1,0 +1,83 @@
+<div class="container-fluid" >
+    <div class="row">
+        <div class="col-md-8">
+            <div class="header-container" style="padding:25px 0;">
+                <h3 style="margin:0;">Add Element/Component</h3>
+            </div>
+            <form novalidate class="form-horizontal" name="updateForm">
+                <div class="form-group" ng-show="element.html">
+                    <label for="" class="col-sm-2 control-label">Preview code</label>
+                    <div class="col-sm-10">
+                        <pre ng-bind="element.html"></pre>
+                    </div>
+                </div>
+                <div class="form-group" ng-show="element.html">
+                    <label for="" class="col-sm-2 control-label">Preview element</label>
+                    <div class="col-sm-10">
+                        <pre ng-bind-html="toTrusted(element.html)"></pre>
+                    </div>
+                </div>
+                <!--<div class="form-group">-->
+                    <!--<label for="test" class="col-sm-2 control-label">Test</label>-->
+                    <!--<div class="col-sm-10">-->
+                        <!--<select name="test" id="test" class="form-control" select-two>-->
+                            <!--<option value="ui_features">ui features</option>-->
+                            <!--<option value="components">components</option>-->
+                            <!--<option value="form_elements">form elements</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="form-group">
+                    <label for="type" class="col-sm-2 control-label">Type</label>
+                    <div class="col-sm-10">
+                        <input ng-model="element.type" type="text" name="type" class="form-control" id="type" placeholder="Styleguide Type" required>
+                        <div ng-show="submitted">
+                            <span class="help-block" ng-show="updateForm.type.$error.required" style="color:red;">Type required</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="group" class="col-sm-2 control-label">Group</label>
+                    <div class="col-sm-10">
+                        <input ng-model="element.group" type="text" name="group" class="form-control" id="group" placeholder="Styleguide Group" required>
+                        <div ng-show="submitted">
+                            <span class="help-block" ng-show="updateForm.group.$error.required" style="color:red;">Group required</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="element-component" class="col-sm-2 control-label">Element</label>
+                    <div class="col-sm-10">
+                        <input ng-model="element.element" type="text" name="element" class="form-control" id="element-component" placeholder="Element/Component" required>
+                        <div ng-show="submitted">
+                            <span class="help-block" ng-show="updateForm.element.$error.required" style="color:red;">Element required</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="html" class="col-sm-2 control-label">HTML</label>
+                    <div class="col-sm-10">
+                        <textarea ng-model="element.html" id="html" cols="10" rows="5" class="form-control" placeholder="HTML goes here..."></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="css" class="col-sm-2 control-label">CSS</label>
+                    <div class="col-sm-10">
+                        <textarea ng-model="element.css" id="css" cols="10" rows="5" class="form-control" placeholder="CSS goes here..."></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="js" class="col-sm-2 control-label">JS</label>
+                    <div class="col-sm-10">
+                        <textarea ng-model="element.js" id="js" cols="10" rows="5" class="form-control" placeholder="JS goes here..."></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12 text-right">
+                        <button class="btn btn-success" type="submit" ng-click="saveContent(element)">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
