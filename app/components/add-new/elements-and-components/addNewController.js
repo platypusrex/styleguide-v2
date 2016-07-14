@@ -7,8 +7,52 @@
         '$sanitize',
         '$sce',
         function($scope, firebaseDataService, $sanitize, $sce){
-            $scope.submitted = false;
             var baseRef = firebaseDataService.root;
+            $scope.submitted = false;
+            $scope.type = [
+                {
+                    id: 1,
+                    value: 'ui_features'
+                },
+                {
+                    id: 2,
+                    value: 'components'
+                },
+                {
+                    id: 3,
+                    value: 'form_elements'
+                }
+            ];
+            $scope.group = null;
+            
+            $scope.checkSelectType = function(val){
+                if(val){
+                    if(val.id === 1){
+                        $scope.group = [
+                            'general_components',
+                            'buttons',
+                            'popover_confirmations',
+                            'icons',
+                            'typography',
+                            'tabs_and_navs',
+                            'accordions',
+                            'timeline',
+                            'tree_view',
+                            'progress_bar',
+                            'block_ui',
+                            'growl_notifications'
+                        ];
+                    } else if(val.id === 2) {
+                        $scope.group = [
+                            'test'
+                        ]
+                    } else {
+                        $scope.group = [
+                            'inputs'
+                        ]
+                    }
+                }
+            };
 
             String.prototype.replaceAll = function(target, replacement) {
                 return this.split(target).join(replacement);
@@ -28,7 +72,7 @@
 
                 if(validate){
                     var dataObj = {
-                        type: data.type,
+                        type: data.type.value,
                         group: data.group,
                         element: data.element,
                         html: data.html

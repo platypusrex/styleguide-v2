@@ -8,29 +8,19 @@
                 <div class="form-group" ng-show="element.html">
                     <label for="" class="col-sm-2 control-label">Preview code</label>
                     <div class="col-sm-10">
-                        <pre ng-bind="element.html"></pre>
+                        <pre><code ng-bind="element.html"></code></pre>
                     </div>
                 </div>
                 <div class="form-group" ng-show="element.html">
                     <label for="" class="col-sm-2 control-label">Preview element</label>
                     <div class="col-sm-10">
-                        <pre ng-bind-html="toTrusted(element.html)"></pre>
+                        <pre><code ng-bind-html="toTrusted(element.html)"></code></pre>
                     </div>
                 </div>
-                <!--<div class="form-group">-->
-                    <!--<label for="test" class="col-sm-2 control-label">Test</label>-->
-                    <!--<div class="col-sm-10">-->
-                        <!--<select name="test" id="test" class="form-control" select-two>-->
-                            <!--<option value="ui_features">ui features</option>-->
-                            <!--<option value="components">components</option>-->
-                            <!--<option value="form_elements">form elements</option>-->
-                        <!--</select>-->
-                    <!--</div>-->
-                <!--</div>-->
                 <div class="form-group">
                     <label for="type" class="col-sm-2 control-label">Type</label>
                     <div class="col-sm-10">
-                        <input ng-model="element.type" type="text" name="type" class="form-control" id="type" placeholder="Styleguide Type" required>
+                        <select ng-model="element.type" name="type" id="type" class="form-control type" ng-options="item.value for item in type" ng-blur="checkSelectType(element.type)"></select>
                         <div ng-show="submitted">
                             <span class="help-block" ng-show="updateForm.type.$error.required" style="color:red;">Type required</span>
                         </div>
@@ -39,7 +29,7 @@
                 <div class="form-group">
                     <label for="group" class="col-sm-2 control-label">Group</label>
                     <div class="col-sm-10">
-                        <input ng-model="element.group" type="text" name="group" class="form-control" id="group" placeholder="Styleguide Group" required>
+                        <select ng-model="element.group" name="group" id="group" class="form-control group" ng-options="item for item in group"></select>
                         <div ng-show="submitted">
                             <span class="help-block" ng-show="updateForm.group.$error.required" style="color:red;">Group required</span>
                         </div>

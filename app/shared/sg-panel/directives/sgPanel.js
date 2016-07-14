@@ -6,7 +6,9 @@
             restrict: 'E',
             templateUrl: '../static/styleguide-v2/app/shared/sg-panel/templates/sgPanel.html',
             scope: {
-                component: '='
+                component: '=',
+                editComponent: '&edit',
+                removeComponent: '&remove'
             },
             controller: function($scope){
                 $scope.collapsed = true;
@@ -17,6 +19,14 @@
                 
                 $scope.toTrusted = function(htmlCode){
                     return $sce.trustAsHtml(htmlCode);
+                };
+
+                $scope.edit = function(component){
+                    $scope.editComponent({val: component})
+                };
+
+                $scope.remove = function(component){
+                    $scope.removeComponent({val: component});
                 };
             }
         }

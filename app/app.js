@@ -25,7 +25,10 @@
             'BlockUIModule',
             'GrowlNotificationsModule',
             'InputsModule',
-            'AddNewModule'
+            'AddNewModule',
+            'ModalModule',
+            'RemoveComponentModule',
+            'EditComponentModule'
         ])
         .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
             $urlRouterProvider.otherwise('/dashboard');

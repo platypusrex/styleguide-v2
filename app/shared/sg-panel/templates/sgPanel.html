@@ -28,6 +28,10 @@
                 </div>
                 <div class="component-view" ng-bind-html="toTrusted(component.code.html)"></div>
             </div>
+            <div class="panel-footer text-right">
+                <button class="btn btn-default edit" ng-click="edit(component)">Edit</button>
+                <button class="btn btn-default remove" ng-click="remove(component)">Remove</button>
+            </div>
         </div>
     </div>
 </div>
