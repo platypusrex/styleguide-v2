@@ -16,7 +16,7 @@
             
             $scope.editComponent = function(component){
                 ModalService.showModal({
-                    templateUrl: '../static/styleguide-v2/app/shared/edit-component/templates/editComponent.html',
+                    templateUrl: 'app/shared/edit-component/templates/editComponent.html',
                     controller: 'editComponentCtrl',
                     inputs: {
                         component: component,
@@ -35,7 +35,7 @@
             
             $scope.removeComponent = function(component){
                 ModalService.showModal({
-                    templateUrl: '../static/styleguide-v2/app/shared/remove-component/templates/removeComponent.html',
+                    templateUrl: 'app/shared/remove-component/templates/removeComponent.html',
                     controller: 'removeComponentCtrl',
                     inputs: {
                         component: component,

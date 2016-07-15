@@ -8,13 +8,14 @@
                     url: '/dashboard',
                     views: {
                         '': {
-                            templateUrl: '../static/styleguide-v2/app/components/dashboard/dashboard.html'
+                            templateUrl: 'app/components/dashboard/dashboard.html'
                         },
                         'sidenav@dashboard': {
-                            templateUrl: '../static/styleguide-v2/app/shared/sidenav/sidenav.html'
+                            templateUrl: 'app/shared/sidenav/sidenav.html',
+                            controller: 'sidenavCtrl'
                         },
                         'content@dashboard': {
-                            templateUrl: '../static/styleguide-v2/app/shared/content/content.html'
+                            templateUrl: 'app/shared/content/content.html'
                         }
                     }
                 })
@@ -22,7 +23,7 @@
 	                url: '/general-components',
 	                views: {
 		                'general-components': {
-			                templateUrl: '../static/styleguide-v2/app/components/ui-features/general-components/templates/generalComponents.html',
+			                templateUrl: 'app/components/ui-features/general-components/templates/generalComponents.html',
                             controller: 'generalComponentsCtrl'
 		                }
 		            }
@@ -31,7 +32,7 @@
                     url: '/buttons',
                     views: {
                         'buttons': {
-                            templateUrl: '../static/styleguide-v2/app/components/ui-features/buttons/templates/buttons.html',
+                            templateUrl: 'app/components/ui-features/buttons/templates/buttons.html',
                             controller: 'buttonsCtrl'
                         }
                     }
@@ -40,7 +41,7 @@
                     url: '/popover-confirmations',
                     views: {
                         'popover-confirmations': {
-                            templateUrl: '../static/styleguide-v2/app/components/ui-features/popover-confirmations/popoverConfirmations.html',
+                            templateUrl: 'app/components/ui-features/popover-confirmations/popoverConfirmations.html',
                             controller: 'popoverConfirmationsCtrl'
                         }
                     }
@@ -49,7 +50,7 @@
                     url: '/icons',
                     views: {
                         'icons': {
-                            templateUrl: '../static/styleguide-v2/app/components/ui-features/icons/templates/icons.html',
+                            templateUrl: 'app/components/ui-features/icons/templates/icons.html',
                             controller: 'iconsCtrl'
                         }
                     }
@@ -58,7 +59,7 @@
                     url: '/typography',
                     views: {
                         'typography': {
-                            templateUrl: '../static/styleguide-v2/app/components/ui-features/typography/templates/typography.html',
+                            templateUrl: 'app/components/ui-features/typography/templates/typography.html',
                             controller: 'typographyCtrl'
                         }
                     }
@@ -67,7 +68,7 @@
                     url: '/tabs-and-navs',
                     views: {
                         'tabs-and-navs': {
-                            templateUrl: '../static/styleguide-v2/app/components/ui-features/tabs-and-navs/templates/tabsAndNavs.html',
+                            templateUrl: 'app/components/ui-features/tabs-and-navs/templates/tabsAndNavs.html',
                             controller: 'tabsAndNavsCtrl'
                         }
                     }
@@ -76,7 +77,7 @@
                     url: '/accordions',
                     views: {
                         'accordions': {
-                            templateUrl: '../static/styleguide-v2/app/components/ui-features/accordions/templates/accordions.html',
+                            templateUrl: 'app/components/ui-features/accordions/templates/accordions.html',
                             controller: 'accordionsCtrl'
                         }
                     }
@@ -85,7 +86,7 @@
                     url: '/timeline',
                     views: {
                         'timeline': {
-                            templateUrl: '../static/styleguide-v2/app/components/ui-features/timeline/templates/timeline.html',
+                            templateUrl: 'app/components/ui-features/timeline/templates/timeline.html',
                             controller: 'timelineCtrl'
                         }
                     }
@@ -94,7 +95,7 @@
                     url: '/tree-view',
                     views: {
                         'tree-view': {
-                            templateUrl: '../static/styleguide-v2/app/components/ui-features/tree-view/templates/treeView.html',
+                            templateUrl: 'app/components/ui-features/tree-view/templates/treeView.html',
                             controller: 'treeViewCtrl'
                         }
                     }
@@ -103,7 +104,7 @@
                     url: '/progress-bar',
                     views: {
                         'progress-bar': {
-                            templateUrl: '../static/styleguide-v2/app/components/ui-features/progress-bar/templates/progressBar.html',
+                            templateUrl: 'app/components/ui-features/progress-bar/templates/progressBar.html',
                             controller: 'progressBarCtrl'
                         }
                     }
@@ -112,7 +113,7 @@
                     url: '/block-ui',
                     views: {
                         'block-ui': {
-                            templateUrl: '../static/styleguide-v2/app/components/ui-features/block-ui/templates/blockUI.html',
+                            templateUrl: 'app/components/ui-features/block-ui/templates/blockUI.html',
                             controller: 'blockUICtrl'
                         }
                     }
@@ -121,7 +122,7 @@
                     url: '/growl-notifications',
                     views: {
                         'growl-notifications': {
-                            templateUrl: '../static/styleguide-v2/app/components/ui-features/growl-notifications/templates/growlNotifications.html',
+                            templateUrl: 'app/components/ui-features/growl-notifications/templates/growlNotifications.html',
                             controller: 'growlNotificationsCtrl'
                         }
                     }
@@ -130,7 +131,7 @@
                     url: '/inputs',
                     views: {
                         'inputs': {
-                            templateUrl: '../static/styleguide-v2/app/components/forms/inputs/templates/inputs.html',
+                            templateUrl: 'app/components/forms/inputs/templates/inputs.html',
                             controller: 'inputsCtrl'
                         }
                     }
@@ -139,7 +140,7 @@
                     url: '/add-new',
                     views: {
                         'add-new': {
-                            templateUrl: '../static/styleguide-v2/app/components/add-new/elements-and-components/templates/addNew.html',
+                            templateUrl: 'app/components/add-new/elements-and-components/templates/addNew.html',
                             controller: 'addNewCtrl'
                         }
                     }

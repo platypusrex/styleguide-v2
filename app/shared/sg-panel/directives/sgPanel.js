@@ -4,7 +4,7 @@
     sgPanelModule.directive('sgPanel', ['$sanitize', '$sce',function($sanitize, $sce){
         return {
             restrict: 'E',
-            templateUrl: '../static/styleguide-v2/app/shared/sg-panel/templates/sgPanel.html',
+            templateUrl: 'app/shared/sg-panel/templates/sgPanel.html',
             scope: {
                 component: '=',
                 editComponent: '&edit',

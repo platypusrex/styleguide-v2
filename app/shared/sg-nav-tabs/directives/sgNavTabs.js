@@ -4,7 +4,7 @@
     sgNavTabs.directive('sgNavTabs', function(){
         return {
             restrict: 'E',
-            templateUrl: '../static/styleguide-v2/app/shared/sg-nav-tabs/templates/sgNavTabs.html',
+            templateUrl: 'app/shared/sg-nav-tabs/templates/sgNavTabs.html',
             scope: {
                 setTabId: '&method'
             },

@@ -6,7 +6,8 @@
         'firebaseDataService',
         '$sanitize',
         '$sce',
-        function($scope, firebaseDataService, $sanitize, $sce){
+        '$element',
+        function($scope, firebaseDataService, $sanitize, $sce, $element){
             var baseRef = firebaseDataService.root;
             $scope.submitted = false;
             $scope.type = [
@@ -116,6 +117,12 @@
                 $scope.element = {};
                 $scope.updateForm.$setPristine();
                 $scope.updateForm.$setUntouched();
+
+                closeModal();
+            };
+
+            var closeModal = function(){
+                $element.modal('hide');
             };
         }
     ]);

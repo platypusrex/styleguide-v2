@@ -4,7 +4,7 @@
     sgPanelModule.directive('sgNavPills', [function(){
         return {
             restrict: 'E',
-            templateUrl: '../static/styleguide-v2/app/shared/sg-panel/templates/sgNavPills.html',
+            templateUrl: 'app/shared/sg-panel/templates/sgNavPills.html',
             controller: function($scope){
                 $scope.tab = 1;
 
