@@ -135,15 +135,6 @@
                             controller: 'inputsCtrl'
                         }
                     }
-                })
-                .state('dashboard.add-new', {
-                    url: '/add-new',
-                    views: {
-                        'add-new': {
-                            templateUrl: 'app/components/add-new/elements-and-components/templates/addNew.html',
-                            controller: 'addNewCtrl'
-                        }
-                    }
                 });
         }])
 }());
