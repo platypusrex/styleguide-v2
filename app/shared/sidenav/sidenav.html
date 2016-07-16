@@ -34,18 +34,28 @@
 	.panel-icon {
 		margin-left: auto;
 	}
+	.fa-angle-down {
+		font-size: 18px;
+	}
+	.main .fa-angle-down {
+		transition: transform .3s ease-in-out;
+	}
+	.main.animate .fa-angle-down {
+		transform: rotate(180deg);
+	}
 </style>
 <div class="sidenav-container">
 	<div class="profile-usermenu">
 	    <div class="panel list-group">
 	        <a class="list-group-item" style="border-top:0;">
-		        <span>Dashboard</span>
-		        <i class="fa fa-dashboard pull-left list-icon"></i>
+				<div class="flex-container">
+					<i class="fa fa-dashboard pull-left list-icon"></i>
+					<span>Dashboard</span>
+				</div>
 	        </a>
 			<!-- UI FEATURES -->	        
-	        <a class="list-group-item main" data-parent="#menu" data-target="#ui-features" data-toggle="collapse" href="">
+	        <a class="list-group-item main" data-parent="#menu" data-target="#ui-features" data-toggle="collapse" href="" chevron-icon>
 				<div class="flex-container">
-					<i class="fa fa-database list-icon"></i>
 					<span>UI Features</span>
 					<i class="fa fa-angle-down panel-icon"></i>
 				</div>
@@ -60,59 +70,81 @@
 					</div>
 	        	</a>
 	            <a class="list-group-item small" ui-sref="dashboard.buttons">
-		            <span class="sub">Buttons</span>
-		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
-					<i class="fa fa-caret-right pull-left"></i>
+					<div class="flex-container">
+						<i class="fa fa-caret-right list-icon"></i>
+						<span class="sub">Buttons</span>
+						<i class="fa fa-plus-circle panel-icon"></i>
+					</div>
 	        	</a>
 	            <a class="list-group-item small" ui-sref="dashboard.popover-confirmations">
-		            <span class="sub">Popover Confirmations</span>
-		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
-					<i class="fa fa-caret-right pull-left"></i>
+					<div class="flex-container">
+						<i class="fa fa-caret-right list-icon"></i>
+						<span class="sub">Popover Confirmations</span>
+						<i class="fa fa-plus-circle panel-icon"></i>
+					</div>
 	        	</a>
 	            <a class="list-group-item small" ui-sref="dashboard.icons">
-		            <span class="sub">Icons</span>
-		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
-					<i class="fa fa-caret-right pull-left"></i>
+					<div class="flex-container">
+						<i class="fa fa-caret-right list-icon"></i>
+						<span class="sub">Icons</span>
+						<i class="fa fa-plus-circle panel-icon"></i>
+					</div>
 	        	</a>
 	            <a class="list-group-item small" ui-sref="dashboard.typography">
-		            <span class="sub">Typography</span>
-		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
-					<i class="fa fa-caret-right pull-left"></i>
+					<div class="flex-container">
+						<i class="fa fa-caret-right list-icon"></i>
+						<span class="sub">Typography</span>
+						<i class="fa fa-plus-circle panel-icon"></i>
+					</div>
 	        	</a>
 	            <a class="list-group-item small" ui-sref="dashboard.tabs-and-navs">
-		            <span class="sub">Tabs & Navs</span>
-		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
-					<i class="fa fa-caret-right pull-left"></i>
+					<div class="flex-container">
+						<i class="fa fa-caret-right list-icon"></i>
+						<span class="sub">Tabs & Navs</span>
+						<i class="fa fa-plus-circle panel-icon"></i>
+					</div>
 	        	</a>
 	            <a class="list-group-item small" ui-sref="dashboard.accordions">
-		            <span class="sub">Accordions</span>
-		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
-					<i class="fa fa-caret-right pull-left"></i>
+					<div class="flex-container">
+						<i class="fa fa-caret-right list-icon"></i>
+						<span class="sub">Accordions</span>
+						<i class="fa fa-plus-circle panel-icon"></i>
+					</div>
 	        	</a>
 	            <a class="list-group-item small" ui-sref="dashboard.timeline">
-		            <span class="sub">Timeline</span>
-		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
-					<i class="fa fa-caret-right pull-left"></i>
+					<div class="flex-container">
+						<i class="fa fa-caret-right list-icon"></i>
+						<span class="sub">Timeline</span>
+						<i class="fa fa-plus-circle panel-icon"></i>
+					</div>
 	        	</a>
 	            <a class="list-group-item small" ui-sref="dashboard.tree-view">
-		            <span class="sub">Tree View</span>
-		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
-					<i class="fa fa-caret-right pull-left"></i>
+					<div class="flex-container">
+						<i class="fa fa-caret-right list-icon"></i>
+						<span class="sub">Tree View</span>
+						<i class="fa fa-plus-circle panel-icon"></i>
+					</div>
 	        	</a>
 	            <a class="list-group-item small" ui-sref="dashboard.progress-bar">
-		            <span class="sub">Progress Bar</span>
-		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
-					<i class="fa fa-caret-right pull-left"></i>
+					<div class="flex-container">
+						<i class="fa fa-caret-right list-icon"></i>
+						<span class="sub">Progress Bar</span>
+						<i class="fa fa-plus-circle panel-icon"></i>
+					</div>
 	        	</a>
 	            <a class="list-group-item small" ui-sref="dashboard.block-ui">
-		            <span class="sub">Block UI</span>
-		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
-					<i class="fa fa-caret-right pull-left"></i>
+					<div class="flex-container">
+						<i class="fa fa-caret-right list-icon"></i>
+						<span class="sub">Block UI</span>
+						<i class="fa fa-plus-circle panel-icon"></i>
+					</div>
 	        	</a>
 	            <a class="list-group-item small" ui-sref="dashboard.growl-notifications">
-		            <span class="sub">Growl Notifications</span>
-		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
-					<i class="fa fa-caret-right pull-left"></i>
+					<div class="flex-container">
+						<i class="fa fa-caret-right list-icon"></i>
+						<span class="sub">Growl Notifications</span>
+						<i class="fa fa-plus-circle panel-icon"></i>
+					</div>
 	        	</a>
 	        	
 	    	</div>
@@ -120,34 +152,40 @@
 
 
 			<!-- COMPONENTS -->
-	        <a class="list-group-item main" data-parent="#menu" data-target="#components" data-toggle="collapse" href="">
-		        <span>Components</span>
-		        <i class="fa fa-database pull-left list-icon"></i>
-		        <i class="fa fa-angle-down pull-right panel-icon"></i>
+	        <a class="list-group-item main" data-parent="#menu" data-target="#components" data-toggle="collapse" href="" chevron-icon>
+				<div class="flex-container">
+					<span>Components</span>
+					<i class="fa fa-angle-down panel-icon"></i>
+				</div>
 		    </a>
 		    
 	        <div class="sublinks collapse" id="components">
 	            <a class="list-group-item small">
-		            <span class="sub">LISTTITLE</span>
-		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
-					<i class="fa fa-caret-right pull-left"></i>
+					<div class="flex-container">
+						<i class="fa fa-caret-right list-icon"></i>
+						<span class="sub">LISTTITLE</span>
+						<i class="fa fa-plus-circle panel-icon"></i>
+					</div>
 	        	</a>
 	    	</div>
 
 
 
 			<!-- FORM STUFF -->
-	        <a class="list-group-item main" data-parent="#menu" data-target="#form-stuff" data-toggle="collapse" href="">
-		        <span>Form Elements</span>
-		        <i class="fa fa-database pull-left list-icon"></i>
-		        <i class="fa fa-angle-down pull-right panel-icon"></i>
+	        <a class="list-group-item main" data-parent="#menu" data-target="#form-stuff" data-toggle="collapse" href="" chevron-icon>
+				<div class="flex-container">
+					<span>Form Elements</span>
+					<i class="fa fa-angle-down panel-icon"></i>
+				</div>
 		    </a>
 		    
 	        <div class="sublinks collapse" id="form-stuff">
 	            <a class="list-group-item small" ui-sref="dashboard.inputs">
-		            <span class="sub">Inputs</span>
-		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
-					<i class="fa fa-caret-right pull-left"></i>
+					<div class="flex-container">
+						<i class="fa fa-caret-right list-icon"></i>
+						<span class="sub">Inputs</span>
+						<i class="fa fa-plus-circle panel-icon"></i>
+					</div>
 	        	</a>
 	    	</div>
 
