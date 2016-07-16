@@ -24,6 +24,16 @@
 	.btn-container {
 		padding: 12px;
 	}
+	.flex-container {
+		display: flex;
+		align-items: center;
+	}
+	.list-icon {
+		margin-right: 4px;
+	}
+	.panel-icon {
+		margin-left: auto;
+	}
 </style>
 <div class="sidenav-container">
 	<div class="profile-usermenu">
@@ -34,16 +44,20 @@
 	        </a>
 			<!-- UI FEATURES -->	        
 	        <a class="list-group-item main" data-parent="#menu" data-target="#ui-features" data-toggle="collapse" href="">
-		        <span>UI Features</span>
-		        <i class="fa fa-database pull-left list-icon"></i>
-		        <i class="fa fa-angle-down pull-right panel-icon"></i>
+				<div class="flex-container">
+					<i class="fa fa-database list-icon"></i>
+					<span>UI Features</span>
+					<i class="fa fa-angle-down panel-icon"></i>
+				</div>
 		    </a>
 		    
 	        <div class="sublinks collapse" id="ui-features">
 	            <a class="list-group-item small" ui-sref="dashboard.general-components">
-		            <span class="sub">General Components</span>
-		            <i class="fa fa-plus-circle pull-right sub-icon"></i>
-					<i class="fa fa-caret-right pull-left"></i>
+					<div class="flex-container">
+						<i class="fa fa-caret-right list-icon"></i>
+						<span class="sub">General Components</span>
+						<i class="fa fa-plus-circle panel-icon"></i>
+					</div>
 	        	</a>
 	            <a class="list-group-item small" ui-sref="dashboard.buttons">
 		            <span class="sub">Buttons</span>

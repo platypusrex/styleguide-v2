@@ -7,13 +7,19 @@
         'component',
         'children',
         'firebaseDataService',
-        function($scope, $element, component, children, firebaseDataService){
+        '$sce',
+        '$sanitize',
+        function($scope, $element, component, children, firebaseDataService, $sce, $sanitize){
             var baseRef = firebaseDataService.root;
             $scope.submitted = false;
             $scope.element = {
                 html: (component.code.html) ? component.code.html : '',
                 css: (component.code.css) ? component.code.css : '',
                 js: (component.code.js) ? component.code.js : ''
+            };
+
+            $scope.toTrusted = function(htmlCode){
+                return $sce.trustAsHtml(htmlCode);
             };
 
             $scope.updateComponent = function(data){
